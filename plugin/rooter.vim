@@ -78,7 +78,7 @@ endfunction
 " Changes the current working directory to the current file's
 " root directory.
 function! s:ChangeToRootDirectory()
-  let root_dir = s:FindRootDirectory()
+  let root_dir = fnameescape(s:FindRootDirectory())
   if !empty(root_dir)
     if exists('+autochdir')
       set noautochdir
