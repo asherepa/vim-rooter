@@ -52,8 +52,7 @@ function! s:FindSCMDirectory(scm_type)
     return ""
   endif
 
-  let dir_current_file = expand("%:p:h")
-  let scm_dir = finddir(a:scm_type, dir_current_file . ";")
+  let scm_dir = finddir(a:scm_type, '.;')
   " If we're at the project root or we can't find one above us
   if scm_dir == a:scm_type || empty(scm_dir)
     return ""
