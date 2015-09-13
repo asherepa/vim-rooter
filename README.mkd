@@ -53,3 +53,5 @@ changing directory (`:cd`) by adding this to your `.vimrc`:
 
 Install into `~/.vim/plugin/rooter.vim` or, if you're using Pathogen, into
 `~/.vim/bundle/rooter.vim`.
+
+Join the chat at https://gitter.im/asherepa/vim-rooter
